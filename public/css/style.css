@@ -1509,7 +1509,6 @@ h5.tittle {
 }
 .isop-filter li {
 	float: left;
-	width: 20%;
 	text-align: center;
 }
 .isop-filter li a i {
@@ -1569,7 +1568,6 @@ h5.tittle {
 }
 .main-nav {
 	position: relative;
-	padding-right: 70px;
 }
 .main-nav #cd-menu-trigger {
 	top: 7px;
