@@ -17,7 +17,7 @@ app.get('/', (req, res)=>{
   });
 
   app.get('/resume', (req, res)=>{
-    res.sendFile(path.resolve(__dirname,'pages/resume.html'));
+    res.render('resume');
   });
 
   app.get('/about', (req, res)=>{
