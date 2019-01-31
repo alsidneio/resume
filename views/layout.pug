@@ -31,123 +31,117 @@ html.no-js(lang='en')
                 #content
                     .resume
                         .container
-                        // NAV LINKS 
-                        nav
-                            // Brand and toggle get grouped for better mobile display 
-                            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#nav-tabis', aria-expanded='false')
-                            span.tittle MENU
-                            span.fa.fa-navicon.icon-nav
-                            // Collect the nav links, forms, and other content for toggling 
+                            // NAV LINKS 
+                            nav
+                                // Brand and toggle get grouped for better mobile display 
+                                button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#nav-tabis', aria-expanded='false')
+                                    span.tittle MENU
+                                    span.fa.fa-navicon.icon-nav
+                                // Collect the nav links, forms, and other content for toggling 
+                                .row
+                                    .collapse.navbar-collapse#nav-tabis
+                                        ul.isop-filter.main-nav
+                                            li.active.col-md-4
+                                                a(href='/about')
+                                                    i.icon-user
+                                                    | ABOUT ME
+                                            li.col-md-4
+                                                a(href='/resume')
+                                                    i.icon-book-open
+                                                    | RESUME
+                                            li.col-md-4
+                                                a(href='/index')
+                                                    i.icon-book-open
+                                                    | INDEX
+                                            // <li ><a href="portfolio.html" ><i class="icon-rocket"></i>PORTFOLIO</a></li> 
+                            // NAV LINKS END 
+                            // Resume 
                             .row
-                            .collapse.navbar-collapse#nav-tabis
-                                ul.isop-filter.main-nav
-                                li.active.col-md-4
-                                    a(href='/about')
-                                    i.icon-user
-                                    | ABOUT ME
-                                li.col-md-4
-                                    a(href='/resume')
-                                    i.icon-book-open
-                                    | RESUME
-                                li.col-md-4
-                                    a(href='/index')
-                                        i.icon-book-open
-                                        | INDEX
-                                // <li ><a href="portfolio.html" ><i class="icon-rocket"></i>PORTFOLIO</a></li> 
-                        // NAV LINKS END 
-                        // Resume 
-                        .row
-                            // Sidebar 
-                            .col-md-4
-                            .side-bar
-                                // Professional Details 
-                                h5.tittle Professional Details
-                                img.img-responsive(src='images/avatar.jpg', alt='')
-                                ul.personal-info
-                                li
-                                    p
-                                    span Name
-                                    | Alsidneio Bell
-                                li
-                                    p
-                                    span Location
-                                    | Auburn, Wa
-                                li
-                                    p
-                                    span Degree
-                                    | Electrical Engineering
-                                li
-                                    p
-                                    span Phone
-                                    | (510) 860-6983
-                                li
-                                    p
-                                    span E-mail
-                                    a(href='#.') Alsidneio@gmail.com
-                                li
-                                    p
-                                    span Website
-                                    a(href='#.') example.com
-                                // Attachments 
-                                h5.tittle Attachments
-                                .attach.bor-btm.padding-25
-                                ul
-                                    li
-                                    p
-                                        img(src='images/pdf-icon.jpg', alt='')
-                                        |  Curriculum-Vitae.pdf
-                                        a(href='#.')
-                                        i.fa.fa-cloud-download
-                                        a(href='#.')
-                                        i.fa.fa-eye
-                                    li
-                                    p
-                                        img(src='images/word-icon.jpg', alt='')
-                                        |  COE.docx
-                                        a(href='#.')
-                                        i.fa.fa-cloud-download
-                                        a(href='#.')
-                                        i.fa.fa-eye
-                                // Social Profiles 
-                                h5.tittle Social Profiles
-                                .social-icon.bor-btm.padding-25
-                                ul
-                                    li
-                                    a(href='#.')
-                                        i.fa.fa-facebook
-                                    li
-                                    a(href='#.')
-                                        i.fa.fa-google
-                                    li
-                                    a(href='#.')
-                                        i.fa.fa-twitter
-                                    li
-                                    a(href='#.')
-                                        i.fa.fa-linkedin
-                                    li
-                                    a(href='#.')
-                                        i.fa.fa-skype
-                                // Contact Me 
-                                h5.tittle Contact Me
-                                .contact.padding-25
-                                // Success Msg 
-                                #contact_message.success-msg
-                                    i.fa.fa-paper-plane-o
-                                    | Thank You. Your Message has been Submitted
-                                // FORM 
-                                form#contact_form.contact-form(role='form', method='post', onsubmit='return false')
-                                    ul.row
-                                    li.col-sm-12
-                                        label
-                                        input.form-control#email(type='text', name='email', placeholder='Email')
-                                    li.col-sm-12
-                                        label
-                                        input.form-control#company(type='text', name='company', placeholder='Subject')
-                                    li.col-sm-12
-                                        label
-                                        textarea.form-control#message(name='message', rows='5', placeholder='Message')
-                                    li.col-sm-12
-                                        button#btn_submit(type='submit', value='submit', onclick='proceed();') Send Message
+                                // Sidebar 
+                                .col-md-4
+                                    .side-bar
+                                        // Professional Details 
+                                        h5.tittle Professional Details
+                                        img.img-responsive(src='images/avatar.jpg', alt='')
+                                        ul.personal-info
+                                            li
+                                                p
+                                                span Name
+                                                | Alsidneio Bell
+                                            li
+                                                p
+                                                span Location
+                                                | Auburn, Wa
+                                            li
+                                                p
+                                                span Degree
+                                                | Electrical Engineering
+                                            li
+                                                p
+                                                span Phone
+                                                | (510) 860-6983
+                                            li
+                                                p
+                                                span E-mail
+                                                a(href='#.') Alsidneio@gmail.com
+                                            li
+                                                p
+                                                span Website
+                                                a(href='#.') example.com
+                                        // Attachments 
+                                        h5.tittle Attachments
+                                        .attach.bor-btm.padding-25
+                                        ul
+                                            li
+                                                p
+                                                    img(src='images/pdf-icon.jpg', alt='')
+                                                    |  Curriculum-Vitae.pdf
+                                                    a(href='#.')
+                                                        i.fa.fa-cloud-download
+                                                    a(href='#.')
+                                                        i.fa.fa-eye
+                                            li
+                                
+                                        // Social Profiles 
+                                        h5.tittle Social Profiles
+                                        .social-icon.bor-btm.padding-25
+                                            ul
+                                                li
+                                                    a(href='#.')
+                                                        i.fa.fa-facebook
+                                                li
+                                                    a(href='#.')
+                                                        i.fa.fa-google
+                                                li
+                                                    a(href='#.')
+                                                        i.fa.fa-twitter
+                                                li
+                                                    a(href='#.')
+                                                        i.fa.fa-linkedin
+                                                li
+                                                    a(href='#.')
+                                                        i.fa.fa-skype
+                                        // Contact Me 
+                                        h5.tittle Contact Me
+                                        .contact.padding-25
+                                            // Success Msg 
+                                            #contact_message.success-msg
+                                                i.fa.fa-paper-plane-o
+                                                | Thank You. Your Message has been Submitted
+                                            // FORM 
+                                            form#contact_form.contact-form(role='form', method='post', onsubmit='return false')
+                                                ul.row
+                                                    li.col-sm-12
+                                                        label
+                                                        input.form-control#email(type='text', name='email', placeholder='Email')
+                                                    li.col-sm-12
+                                                        label
+                                                        input.form-control#company(type='text', name='company', placeholder='Subject')
+                                                    li.col-sm-12
+                                                        label
+                                                        textarea.form-control#message(name='message', rows='5', placeholder='Message')
+                                                    li.col-sm-12
+                                                        button#btn_submit(type='submit', value='submit', onclick='proceed();') Send Message
                                 block content
             block foot
                 // Footer 
