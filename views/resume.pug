@@ -1,0 +1,176 @@
+extends layout.pug
+block content
+    // MAIN CONTENT 
+    .col-md-8
+        .inside-sec
+            // BIO AND SKILLS 
+            h5.tittle Bio & Skills
+            .bio-info.padding-30
+                p
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam.
+                    br
+                    br
+                    | Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare, ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget nisi.
+                    br
+                    br
+                    | Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam viverra nisi, in interdum massa nibh nec erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus.
+                .skills
+                    // HARD SKILLS 
+                    h5.margin-top-30 Hard Skills
+                    h6 Physical SCiences
+                    // Sound Engineering 
+                    .panel-group.accordion#accordion
+                        .panel.panel-default
+                            .row
+                                .col-sm-4
+                                    // PANEL HEADING 
+                                    .panel-heading
+                                        h4.panel-title
+                                            a(data-toggle='collapse', data-parent='#accordion', href='#collapseOne') Sound Engineering
+                                // Skills Bars 
+                                .col-sm-8
+                                    .progress
+                                        .progress-bar(role='progressbar', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100', style='width: 80%;')
+                                            span.sr-only 60% Complete
+                                    // Skillls Text 
+                                    #collapseOne.panel-collapse.collapse.in
+                                        .panel-body
+                                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem.
+                        // Business Administration 
+                        h6 Business Administration
+                        .panel.panel-default
+                            .row
+                                .col-sm-4
+                                    // PANEL HEADING 
+                                    .panel-heading
+                                        h4.panel-title
+                                            a.collapsed(data-toggle='collapse', data-parent='#accordion', href='#collapsetwo') Farming Economics
+                                // Skillls Bars 
+                                .col-sm-8
+                                    .progress
+                                        .progress-bar(role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 60%;')
+                                                span.sr-only 60% Complete
+                                    // Skillls Text 
+                                    #collapsetwo.panel-collapse.collapse
+                                        .panel-body
+                                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem.
+                    // Soft Skills 
+                    h5.margin-top-30 Soft Skills
+                    // Application of knowledge 
+                    h6 Application of knowledge
+                    .panel-group.accordion#accordion1
+                        .panel.panel-default
+                            .row
+                                .col-sm-4
+                                    // PANEL HEADING 
+                                    .panel-heading
+                                        h4.panel-title
+                                            a.collapsed(data-toggle='collapse', data-parent='#accordion1', href='#collapsethr') Farming Economics
+                                // Skillls Bars 
+                                .col-sm-8
+                                    .progress
+                                        .progress-bar(role='progressbar', aria-valuenow='100', aria-valuemin='0', aria-valuemax='100', style='width: 100%;')
+                                            span.sr-only 60% Complete
+                                    // Skillls Text 
+                                    #collapsethr.panel-collapse.collapse
+                                        .panel-body
+                                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem.
+                    // Follow ethical 
+                    .ethical
+                        h6 Follow ethical work practices
+                        a(href='#.') Prioritize Learning Tasks
+                        a(href='#.') Make Ethical Choices
+                        a(href='#.') Social Work
+                        a(href='#.') Community Work
+        // Professional Experience 
+        .inside-sec.margin-top-30
+            // Professional Experience 
+            h5.tittle Professional Experience
+            .padding-30.exp-history
+                // SDET
+                .exp
+                    .media-left
+                        span.sun 2017 - 2018
+                    .media-body
+                        // COmpany Logo 
+                        .company-logo
+                            img(src='img/maven_logo.jpg', alt='maven logo')
+                        h6 Software Developer in Test
+                        p Maven Network
+                        p Seattle, Wa, USA
+                        p.margin-top-10
+                            | While at Maven I was on the QA Team where I primarily focuse on the frontend UI/UX test automation using 
+                            span.more-text frameworks such as selenium and webdriver.io
+                            a.read-more(href='') ...Read More
+                            
+                // Design Engineer
+                .exp
+                    .media-left
+                        span.sun 2015 - 2018
+                    .media-body
+                        // COmpany Logo 
+                        .company-logo
+                            img(src='img/boeing_logo.png', alt='boeing logo')
+                        h6 Electrical System Design Engineer
+                        p Boeing
+                        p Everett, Wa, USA
+                        p.margin-top-10
+                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam (...)
+                            a(href='#.') Read More
+                // Junior Frontend Developer
+                .exp
+                    .media-left
+                        span.sun Summer 2017
+                    .media-body
+                        // COmpany Logo 
+                        .company-logo
+                            //- img(src='img/boeing_logo.png', alt='boeing logo')
+                        h6 Junior Frontend Developer
+                        p Gursel Group
+                        p Seattle, Wa, USA
+                        p.margin-top-10
+                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam (...)
+                            a(href='#.') Read More
+                            span.more-text
+                // Software QA Intern 
+                .exp
+                    .media-left
+                        span.sun Summer 2009
+                    .media-body
+                        // COmpany Logo 
+                        .company-logo
+                            img.apple(src='img/apple.png', alt='apple logo')
+                        h6 iPod Software QA Intern
+                        p Apple
+                        p Cupertino, Ca, USA
+                        p.margin-top-10
+                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam (...)
+                            a(href='#.') Read More
+        // Academic Background 
+        .inside-sec.margin-top-30
+            // Academic Background 
+            h5.tittle Academic Background
+            .padding-30.exp-history
+                // Wordpress Developer 
+                .exp
+                    .media-left
+                        span.sun 2008 - 2012
+                    .media-body
+                        // College Logo 
+                        .company-logo
+                            img(src='img/morehouseLogo.jpg', alt='boeing logo')
+                        h6 Applied Physics
+                        p Morehouse College
+                        p Atlanta, Ga, USA
+                        
+                // html5 and css3 Developer 
+                .exp
+                    .media-left
+                        span.sun 2012 - 2015
+                    .media-body
+                        // College Logo 
+                        .company-logo
+                            img(src='img/rpiLogo.jpg', alt='boeing logo')
+                        h6 Electrical Engineering
+                        p Renssealaer Polytechnic Institute
+                        p Troy, Ny, USA
