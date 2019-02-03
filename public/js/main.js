@@ -9,9 +9,9 @@ $('#Container').mixItUp();
 /*    Read More/Show Less functionality on resume page
 /*-----------------------------------------------------------------------------------*/
 
-$(".complete").toggle(); 
+$(".complete").hide()
 $(".more-less").click(function(){
-    $(".complete").toggle(); 
+    $(".complete").slideToggle(); 
         if($(this).text()=="...Show Less"){
             $(this).text("...Show More");
         }else{
