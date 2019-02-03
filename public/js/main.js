@@ -5,13 +5,40 @@ jQuery( document ).ready(function( $ ) {
 /*-----------------------------------------------------------------------------------*/
 $('#Container').mixItUp();
 
-$(".more-text").hide();
-$(".read-more").on("click", function (e) {
-        e.preventDefault();
-        var txt = $(".content").is(':visible') ? 'Read More' : 'Show Less';
-        $(".read-more").text(txt);
-        $(this).('.more-text').slideToggle(200);
-});
+/*-----------------------------------------------------------------------------------*/
+/*    Read More/Show Less functionality on resume page
+/*-----------------------------------------------------------------------------------*/
+
+$(".complete").toggle(); 
+$(".more-less").click(function(){
+    $(".complete").toggle(); 
+        if($(this).text()=="...Show Less"){
+            $(this).text("...Show More");
+        }else{
+            $(this).text("...Show Less");
+        }      
+    });
+    // let text= $(".read-more").text();
+
+    // let lessText=text.substr(0,100)
+
+    // if(text.length > 100){
+    //     $(".read-more").text(lessText);
+    //     $(".read-more").append("<a href='' class='read-more-link'> ...Show More </a>");
+    // }else{
+    //     $(".read-more").text(text);
+    // }
+
+    // $(".read-more-link").click(function(e){
+    //     e.preventDefault();
+    //     $(this).parent().text(text).append("<a href='' class='show-less-link'> ...Show Less </a>");
+    // });
+
+    // $(".show-less-link").click(function(e){
+    //     e.preventDefault();
+    //     $(this).parent().text(lessText).append("<a href='' class='read-more-link'> ...Show More</a>");
+
+    // });
 
 });
 
