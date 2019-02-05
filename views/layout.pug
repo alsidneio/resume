@@ -119,19 +119,19 @@ html.no-js(lang='en')
                                                 i.fa.fa-paper-plane-o
                                                 | Thank You. Your Message has been Submitted
                                             // FORM 
-                                            form#contact_form.contact-form(role='form', method='post', onsubmit='return false')
+                                            form#contact_form.contact-form(role='form', method='post', action="send")
                                                 ul.row
                                                     li.col-sm-12
                                                         label
                                                         input.form-control#email(type='text', name='email', placeholder='Email')
                                                     li.col-sm-12
                                                         label
-                                                        input.form-control#company(type='text', name='company', placeholder='Subject')
+                                                        input.form-control#company(type='text', name='subject', placeholder='Subject')
                                                     li.col-sm-12
                                                         label
                                                         textarea.form-control#message(name='message', rows='5', placeholder='Message')
                                                     li.col-sm-12
-                                                        button#btn_submit(type='submit', value='submit', onclick='proceed();') Send Message
+                                                        button#btn_submit(type='submit', value='submit') Send Message
                                 block content
             block foot
                 // Footer 

@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const bodyParser = require('body-parser');
-const path= require('path');
+const {google} = require('googleapis');
 require('dotenv').config();
 
 let port =4000;
@@ -11,21 +11,25 @@ app.use(express.static('public'));
 //Load View Engine
  app.set('view engine', 'pug');
 
+ //Body Parsder Middleware
+ app.use(bodyParser.urlencoded({extended: false}));
+ app.use(bodyParser.json());
+
 //Home Route 
 app.get('/', (req, res)=>{
     res.render('index');
   });
 
-  app.get('/resume', (req, res)=>{
+app.get('/resume', (req, res)=>{
     res.render('resume');
   });
+app.post('/send', (req,res)=>{
+ 
+});
 
-  app.get('/about', (req, res)=>{
-    res.sendFile(path.resolve(__dirname,'pages/about-me.html'));
-  });
 
-  app.get('/index', (req, res)=>{
-    res.sendFile(path.resolve(__dirname,'pages/index.html'));
-  });
+
+
+
 //Start Server
 app.listen(port, ()=> console.log(`Web Server started on ${port}`));
