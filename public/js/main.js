@@ -25,7 +25,13 @@ $(".more-less").click(function(e){
 /*    End of JQuery functions 
 /*-----------------------------------------------------------------------------------*/
 
-
+let validation = () =>{
+    Swal.fire({
+        type: 'success',
+        title:'Message Sent.',
+        text: 'Thanks for your inquiry, I will get back to you soon'
+      })
+}
 
 
 

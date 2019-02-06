@@ -1,8 +1,6 @@
 const express = require("express");
 const app = express();
 const bodyParser = require('body-parser');
-const {google} = require('googleapis');
-const OAuth2 = google.auth.OAuth2;
 require('dotenv').config();
 const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey(process.env.SG_API_KEY);
