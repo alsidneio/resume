@@ -509,6 +509,7 @@ h5.tittle {
 .exp-history .company-logo {
 	position: absolute;
 	right: 0px;
+	margin-top: 10px;
 }
 .exp-history a {
 	color: #346abb;

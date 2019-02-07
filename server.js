@@ -4,7 +4,6 @@ const bodyParser = require('body-parser');
 require('dotenv').config();
 const sgMail = require('@sendgrid/mail');
 const mailer=require('./public/js/mailer');
-const Swal = require('sweetalert2');
 sgMail.setApiKey(process.env.SG_API_KEY);
 
 let port =4000;
