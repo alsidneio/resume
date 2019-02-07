@@ -1,0 +1,153 @@
+doctype html
+html.no-js(lang='en')
+    head
+        meta(name='viewport', content='width=device-width,initial-scale=1')
+        meta(http-equiv="content-type" content="text/html; charset=utf-8")
+        meta(name='author', content='Alsidneio Bell')
+        // Document Title 
+        title Alsidneio Bell
+        // StyleSheets 
+        link(rel='stylesheet', href='css/ionicons.min.css')
+        link(rel='stylesheet', href='css/bootstrap/bootstrap.min.css')
+        link(rel='stylesheet', href='css/font-awesome.min.css')
+        link(rel='stylesheet', href='css/main.css')
+        link(rel='stylesheet', href='css/style.css')
+        link(rel='stylesheet', href='css/responsive.css')
+        // FontsOnline 
+        link(href='https://fonts.googleapis.com/css?family=Nunito', rel='stylesheet')
+        // JavaScripts 
+        script(src='js/vendors/modernizr.js')
+        // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries 
+        // WARNING: Respond.js doesn't work if you view the page via file:// 
+        //  [if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+            <![endif]
+        script(src="https://cdn.jsdelivr.net/npm/sweetalert2@8")
+    body 
+        // Page Wrapper 
+        #wrap
+            // Content 
+            main.cd-main-content
+                #content
+                    .resume
+                        .container
+                            // NAV LINKS 
+                            nav
+                                // Brand and toggle get grouped for better mobile display 
+                                button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#nav-tabis', aria-expanded='false')
+                                    span.tittle MENU
+                                    span.fa.fa-navicon.icon-nav
+                                // Collect the nav links, forms, and other content for toggling 
+                                .row
+                                    .collapse.navbar-collapse#nav-tabis
+                                        ul.isop-filter.main-nav
+                                            li.active.col-md-6
+                                                a(href='/')
+                                                    i.icon-user
+                                                    | ABOUT ME
+                                            li.col-md-6
+                                                a(href='/resume')
+                                                    i.icon-book-open
+                                                    | RESUME
+                                            // <li ><a href="portfolio.html" ><i class="icon-rocket"></i>PORTFOLIO</a></li> 
+                            // NAV LINKS END 
+                            // Resume 
+                            .row
+                                // Sidebar 
+                                .col-md-4
+                                    .side-bar
+                                        // Professional Details 
+                                        h5.tittle Professional Details
+                                        img.img-responsive(src='img/resume_profile.jpeg', alt='')
+                                        ul.personal-info
+                                            li
+                                                p
+                                                    span Name
+                                                    | Alsidneio Bell
+                                            li
+                                                p
+                                                    span Location
+                                                    | Auburn, Wa
+                                            li
+                                                p
+                                                    span Degree
+                                                    | Electrical Engineering
+                                            li
+                                                p
+                                                    span Phone
+                                                    | (510) 860-6983
+                                            li
+                                                p
+                                                    span E-mail
+                                                    a(href='#.') Alsidneio@gmail.com
+                                            li
+                                                p
+                                                    span Website
+                                                    a(href='#.') AlsidneioBell.com
+                                        // Attachments 
+                                        h5.tittle Attachments
+                                        .attach.bor-btm.padding-25
+                                            ul
+                                                li
+                                                    p
+                                                        img(src='images/pdf-icon.jpg', alt='')
+                                                        |  Alsidneio's Resume
+                                                        a(href='resources/alsidneio_resume.pdf' download="Alsidneio_Resume")
+                                                            i.fa.fa-cloud-download
+                                                        a(href='resources/alsidneio_resume.pdf' target='_blank')
+                                                            i.fa.fa-eye
+                                                li
+                                
+                                        // Social Profiles 
+                                        h5.tittle Social Profiles
+                                        .social-icon.bor-btm.padding-25
+                                            ul.text-center
+                                                li
+                                                    a(href='https://www.facebook.com/alsidneio.bell')
+                                                        i.fa.fa-facebook
+                                                li
+                                                    a(href='https://twitter.com/alsidneio')
+                                                        i.fa.fa-twitter
+                                                li
+                                                    a(href='https://www.linkedin.com/in/alsidneio-bell/')
+                                                        i.fa.fa-linkedin
+                                        // Contact Me 
+                                        h5.tittle Contact Me
+                                        .contact.padding-25
+                                            // Success Msg 
+                                            #contact_message.success-msg
+                                                i.fa.fa-paper-plane-o
+                                                | Thank You. Your Message has been Submitted
+                                            // FORM 
+                                            form#contact_form.contact-form(role='form', method='post', action="send")
+                                                ul.row
+                                                    li.col-sm-12
+                                                        label
+                                                        input.form-control#email(type='text', name='email', placeholder='Email')
+                                                    li.col-sm-12
+                                                        label
+                                                        input.form-control#company(type='text', name='subject', placeholder='Subject')
+                                                    li.col-sm-12
+                                                        label
+                                                        textarea.form-control#message(name='message', rows='5', placeholder='Message')
+                                                    li.col-sm-12
+                                                        button#btn_submit(type='submit', value='submit' onclick='validation()') Send Message
+                                block content
+            block foot
+                // Footer 
+                footer.footer
+                    .rights
+                        p © Copyright 2019 BennuTechCo. All right reserved.
+                // End Footer          
+            
+// End Page Wrapper 
+// JavaScripts 
+script(src='js/vendors/jquery/jquery.min.js')
+script(src='js/vendors/bootstrap.min.js')
+script(src='js/vendors/owl.carousel.min.js')
+script(src='js/vendors/jquery.isotope.min.js')
+script(src='js/main.js')
+// Begin Map Script
+script(src='https://maps.googleapis.com/maps/api/js?v=3.exp')
+script(src='js/vendors/map.js')

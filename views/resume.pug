@@ -1,0 +1,263 @@
+extends layout.pug
+block content
+    // MAIN CONTENT 
+    .col-md-8.col-xs-12
+        .inside-sec
+            // BIO AND SKILLS 
+            h5.tittle Bio & Skills
+            .bio-info.padding-30
+                p
+                    | Currently residing in Auburn, Wa by way of Oakland, Ca. I am largely a self-taught programmer, with the occasional direction of 
+                    | some great mentors. I have created freelance sites for event companies, community non-profits and religious organizations. Most of
+                    | time in development has been spent developing the skills needed for the front-end develeopment cycle. I have done UI/UX design, from block
+                    | level designs to Hi-Fi design hand offs. I have taken Hi-FI designs and built out sites. My latest work has been in frontend UI testing. 
+                    br
+                    br
+                    | My academic background includes reseach and development in the realm of Applied Physics. I have experience in mechanical, electrical and software engineering
+                    br
+                    br
+                    | Outside of software development I am a super dad to two great young men and an advocate for social justice. 
+                .skills
+                    // HARD SKILLS 
+                    h5.margin-top-30 Hard Skills
+                    h6 Software Development 
+                    // Sound Engineering 
+                    .panel-group.accordion#accordion1
+                        .panel.panel-default
+                            .row
+                                .col-sm-4
+                                    // PANEL HEADING 
+                                    .panel-heading
+                                        h4.panel-title
+                                            a.collapsed(data-toggle='collapse', data-parent='#accordion1', href='#collapse1') UX/UI Design
+                                // Skills Bars 
+                                .col-sm-8
+                                    .progress
+                                        .progress-bar(role='progressbar', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100', style='width: 63%;')
+                                            span.sr-only 60% Complete
+                                    // Skillls Text 
+                                    #collapse1.panel-collapse.collapse
+                                        .panel-body
+                                            p 
+                                            | Tools I have used in the past are : Balsamiq, Adobe XD, Zeplin, Illustrator and Photoshop. Im always learning more to master these tools. 
+                        .panel-group.accordion#accordion2
+                        .panel.panel-default
+                            .row
+                                .col-sm-4
+                                    // PANEL HEADING 
+                                    .panel-heading
+                                        h4.panel-title
+                                            a.collapsed(data-toggle='collapse', data-parent='#accordion2', href='#collapse2') Front-end Development 
+                                // Skills Bars 
+                                .col-sm-8
+                                    .progress
+                                        .progress-bar(role='progressbar', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100', style='width: 50%;')
+                                            span.sr-only 60% Complete
+                                    // Skillls Text 
+                                    #collapse2.panel-collapse.collapse
+                                        .panel-body
+                                            p 
+                                            | Tools I have used in the past are: BootStrap, JQuery, Pug templating engine , Edge templating engine, MongoDB, WebPack.
+                                            | My next foray front-end development will be to do a deep dive Single Page Applications.   
+                    h6 Design Engineering
+                    // Sound Engineering 
+                    .panel-group.accordion#accordion3
+                        .panel.panel-default
+                            .row
+                                .col-sm-4
+                                    // PANEL HEADING 
+                                    .panel-heading
+                                        h4.panel-title
+                                            a.collapsed(data-toggle='collapse', data-parent='#accordion1', href='#collapse3') AC Power Systems Design
+                                // Skills Bars 
+                                .col-sm-8
+                                    .progress
+                                        .progress-bar(role='progressbar', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100', style='width: 63%;')
+                                            span.sr-only 60% Complete
+                                    // Skillls Text 
+                                    #collapse3.panel-collapse.collapse
+                                        .panel-body
+                                            p 
+                                            | Volatage analysis, DOORS requirements management, equipment management, power systems testing.
+                    // Soft Skills 
+                    h5.margin-top-30 Soft Skills
+                    // Application of knowledge 
+                    //- h6 Application of knowledge
+                    .panel-group.accordion#accordion1
+                        .panel.panel-default
+                            .row
+                                .col-sm-4
+                                    // PANEL HEADING 
+                                    .panel-heading
+                                        h4.panel-title
+                                            a.collapsed(data-toggle='collapse', data-parent='#accordion1', href='#collapsethr1') Effective Communication 
+                                // Skillls Bars 
+                                .col-sm-8
+                                    .progress
+                                        .progress-bar(role='progressbar', aria-valuenow='100', aria-valuemin='0', aria-valuemax='100', style='width: 100%;')
+                                            span.sr-only 60% Complete
+                                    // Skillls Text 
+                                    #collapsethr1.panel-collapse.collapse
+                                        .panel-body
+                                            p 
+                                                | In my experience a lot of information can get lost in translation, so it is important that teams have multiple modes of 
+                                                | effective communicaiton. I always make the best efforts to communicate with a person based on their particular response
+                                                | mechanism. So far this technique has yielded great results in my personal and professional life. 
+                    .panel-group.accordion#accordion2
+                        .panel.panel-default
+                            .row
+                                .col-sm-4
+                                    // PANEL HEADING 
+                                    .panel-heading
+                                        h4.panel-title
+                                            a.collapsed(data-toggle='collapse', data-parent='#accordion2', href='#collapsethr2') Adaptability
+                                // Skillls Bars 
+                                .col-sm-8
+                                    .progress
+                                        .progress-bar(role='progressbar', aria-valuenow='100', aria-valuemin='0', aria-valuemax='100', style='width: 100%;')
+                                            span.sr-only 60% Complete
+                                    // Skillls Text 
+                                    #collapsethr2.panel-collapse.collapse
+                                        .panel-body
+                                            p 
+                                                | Being flexible in an ever changing market is economically valuable to a company of any size. In my past experiences 
+                                                | I have found that being flexible to daily business needs can have a great retrurn on investment. Whether its reprioritizing 
+                                                | a test plan for for a feature release or going from a strictly individual contribution to a more team oriented one. It makes 
+                                                | the job a lot easier if one is flexible. 
+                    // Follow ethical 
+                    .ethical
+                        h6 Follow ethical work practices
+                        a(href='#.') Prioritize Learning Tasks
+                        a(href='#.') Make Ethical Choices
+                        a(href='#.') Team Collaboration
+        // Professional Experience 
+        .inside-sec.margin-top-30
+            // Professional Experience 
+            h5.tittle Professional Experience
+            .padding-30.exp-history
+                // SDET
+                .exp
+                    .media-left
+                        span.sun 2017 - 2018
+                    .media-body
+                        // COmpany Logo 
+                        .company-logo.media-left
+                            img(src='img/maven_logo.jpg', alt='maven logo')
+                        h6 Software Developer in Test
+                        p Maven Network
+                        p Seattle, Wa, USA
+                        p.margin-top-10.read-more
+                            span
+                                | While at Maven I was on the QA Team where I primarily focused on the frontend UI/UX test automation using frameworks
+                                | such as Selenium, WebDriver I/O,
+                            span.complete
+                                | Appium, Saucelabs, and TestRokit. I was in charge of blackbox and whitebox testing new
+                                | features that we beibutiong added to the web app, and I was exclusively responsible for testing of the Android native app. 
+                                | My biggest contrin came through refactoring the test codebase which resulted in a runtime reduction of production critical tests.
+                                br
+                                b Skills gained: 
+                                | Unit testing, test planning, regression testing, JIRA, Agile Development life cycle, Selenium 
+                            a(href='').more-less    ...Show More
+                // Design Engineer
+                .exp
+                    .media-left
+                        span.sun 2015 - 2018
+                    .media-body
+                        // COmpany Logo 
+                        .company-logo
+                            img(src='img/boeing_logo.png', alt='boeing logo')
+                        h6 Electrical System Design Engineer
+                        p Boeing
+                        p Everett, Wa, 
+                        p.margin-top-10.read-more
+                            span  I was responsible for creating the test documentation for the Bus Power Control Unit 
+                            span.complete
+                                | that would be used to qualify our system per FAA safety regulations. Worked with suppliers daily  to ensure that all requirements from system level to equipment level were being met.
+                                | Performed voltage drop analysis on system to ensure compliance with design requirements. For a time a was a system schematic drafter and had a key role in a late 2015 push 
+                                | to have Final System Designs loaded into the integration system. 
+                                br
+                                b Skills gained: 
+                                | System Level Design &amp Analysis, DOORS requirement management tool.
+                            a(href='').more-less ...Show More
+                // Junior Frontend Developer
+                .exp
+                    .media-left
+                        span.sun Summer 2017
+                    .media-body
+                        // COmpany Logo 
+                        .company-logo
+                            //- img(src='img/boeing_logo.png', alt='boeing logo')
+                        h6 Junior Frontend Developer
+                        p Gursel Group
+                        p Seattle, Wa, USA
+                        p.margin-top-10.read-more
+                            span 
+                                | The Gursel group was my introduciton to the front-end web development cycle. At 
+                            span.complete
+                                | the Gursel group was to build a site from already finished Hi-Fi designs. I used the HTML5, CSS3, and ES6 standards to build the site. I used custom JS functions, 
+                                | along with jquery to produce the desired UI. 
+                                br
+                                b Skills gained: 
+                                | JQuery, SASS, Gulp, Test driven development methodology, Version control
+                            a(href='').more-less ...Show More 
+                // Software QA Intern 
+                .exp
+                    .media-left
+                        span.sun Summer 2009
+                    .media-body
+                        // COmpany Logo 
+                        .company-logo
+                            img.apple(src='img/apple.png', alt='apple logo')
+                        h6 iPod Software QA Intern
+                        p Apple
+                        p Cupertino, Ca, USA
+                        p.margin-top-10.read-more
+                            span
+                            | Stress tested iPod to ensure compatibility with Windows 7 &amp Snow Leopard, to
+                            span.complete
+                                | capture bugs and run regresion tests. My biggest contribution was capturing a software compitability 
+                                | issue with iOS on the iPod and the Mini-Cooper
+                                br
+                                b Skills gained: Regression testing
+                                |
+                            a.more-less(href='') ...Show More
+        // Academic Background 
+        .inside-sec.margin-top-30
+            // Academic Background 
+            h5.tittle Academic Background
+            .padding-30.exp-history
+                // Wordpress Developer 
+                .exp
+                    .media-left
+                        span.sun 2008 - 2012
+                    .media-body
+                        // College Logo 
+                        .company-logo
+                            img(src='img/morehouseLogo.jpg', alt='boeing logo')
+                        h6 Applied Physics, B.S.
+                        p Morehouse College
+                        p Atlanta, Ga, USA
+                        
+                // html5 and css3 Developer 
+                .exp
+                    .media-left
+                        span.sun 2012 - 2015
+                    .media-body
+                        // College Logo 
+                        .company-logo
+                            img(src='img/rpiLogo.jpg', alt='boeing logo')
+                        h6 Electrical Engineering, B.S.
+                        p Renssealaer Polytechnic Institute
+                        p Troy, Ny, USA
+                    
+                // Massachusetts Institute of Technology 
+                .exp
+                    .media-left
+                        span.sun 2017
+                    .media-body
+                        // College Logo 
+                        .company-logo
+                            img(src='img/MIT_logo.png', alt='MIT logo')
+                        h6 Architecture & Systems Engineering, Cert.
+                        p Massachusetts Institute of Technology 
+                        p Cambridge, Massachusetts , USA
