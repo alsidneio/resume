@@ -3,6 +3,8 @@ const app = express();
 const bodyParser = require('body-parser');
 require('dotenv').config();
 const sgMail = require('@sendgrid/mail');
+const mailer=require('./public/js/mailer');
+const Swal = require('sweetalert2');
 sgMail.setApiKey(process.env.SG_API_KEY);
 
 let port =4000;
@@ -16,7 +18,6 @@ app.use(express.static('public'));
  app.use(bodyParser.urlencoded({extended: false}));
  app.use(bodyParser.json());
 
-//Home Route 
 app.get('/', (req, res)=>{
     res.render('index');
   });
@@ -24,16 +25,21 @@ app.get('/', (req, res)=>{
 app.get('/resume', (req, res)=>{
     res.render('resume');
   });
+
 app.post('/send', (req,res)=>{
-  const msg = {
-    to: `alsidneio@gmail.com`,
-    from: `alsidneio@gmail.com`,
-    subject: `${req.body.subject}`,
-    html: `
-      <p><b>FROM</b> ${req.body.email}</p>
-      <p>${req.body.message}</p>`,
-  };
-  sgMail.send(msg);
+    
+  Swal.fire({
+      type: 'success',
+      title:'Message Sent.',
+      text: 'Thanks for your inquiry, I will get back to you soon'
+    });
+
+    mailer.send(req.body.email, req.body.subject, req.body.message);
+    
+    console.log(`email sent`);
+    res.redirect('/')
+  
+ 
 });
 
 

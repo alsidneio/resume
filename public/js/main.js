@@ -26,11 +26,16 @@ $(".more-less").click(function(e){
 /*-----------------------------------------------------------------------------------*/
 
 let validation = () =>{
-    Swal.fire({
-        type: 'success',
-        title:'Message Sent.',
-        text: 'Thanks for your inquiry, I will get back to you soon'
-      })
+    alert('Thanks for your inquiry, I will get back to you soon');
+    // Swal.fire({
+    //     type: 'success',
+    //     title:'Message Sent.',
+    //     text: 'Thanks for your inquiry, I will get back to you soon'
+    //   })
+
+    //   document.getElementsByClassName('swal2-confirm').addEventListener('click',()=>{
+    //       window.location.reload();
+    //   });
 }
 
 
