@@ -46,4 +46,4 @@ app.post('/send', (req,res)=>{
 
 
 //Start Server
-app.listen(port, ()=> console.log(`Web Server started on ${port}`));
+app.listen(process.env.PORT||4000, ()=> console.log(`Web Server started`));
