@@ -26,17 +26,11 @@ app.get('/resume', (req, res)=>{
   });
 
 app.post('/send', (req,res)=>{
+   
+  mailer.send(req.body.email, req.body.subject, req.body.message);
     
-  Swal.fire({
-      type: 'success',
-      title:'Message Sent.',
-      text: 'Thanks for your inquiry, I will get back to you soon'
-    });
-
-    mailer.send(req.body.email, req.body.subject, req.body.message);
-    
-    console.log(`email sent`);
-    res.redirect('/')
+  console.log(`email sent`);
+  res.redirect('/')
   
  
 });
