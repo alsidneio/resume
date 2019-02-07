@@ -23,6 +23,7 @@ app.get('/', (req, res)=>{
 
 app.get('/resume', (req, res)=>{
     res.render('resume');
+    
   });
 
 app.post('/send', (req,res)=>{
