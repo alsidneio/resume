@@ -18,12 +18,7 @@ app.use(express.static('public'));
  app.use(bodyParser.json());
 
 app.get('/', (req, res)=>{
-    res.render('index');
-  });
-
-app.get('/resume', (req, res)=>{
     res.render('resume');
-    
   });
 
 app.post('/send', (req,res)=>{

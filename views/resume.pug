@@ -1,7 +1,7 @@
 extends layout.pug
 block content
     // MAIN CONTENT 
-    .col-md-8.col-xs-12
+    .col-md-7.col-xs-12
         .inside-sec
             // BIO AND SKILLS 
             h5.tittle Bio & Skills
@@ -29,38 +29,35 @@ block content
                                     // PANEL HEADING 
                                     .panel-heading
                                         h4.panel-title
-                                            a.collapsed(data-toggle='collapse', data-parent='#accordion1', href='#collapse1') UX/UI Design
+                                            a.collapsed(data-toggle='collapse', data-parent='#accordion1', href='#collapse1') Test Automation
                                 // Skills Bars 
                                 .col-sm-8
                                     .progress
-                                        .progress-bar(role='progressbar', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100', style='width: 63%;')
-                                            span.sr-only 60% Complete
+                                        .progress-bar(role='progressbar', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100', style='width: 80%;')
+                                            span.sr-only 70% Complete
                                     // Skillls Text 
                                     #collapse1.panel-collapse.collapse
                                         .panel-body
                                             p 
-                                            | Tools I have used in the past are : Balsamiq, Adobe XD, Zeplin, Illustrator and Photoshop. Im always learning more to master these tools. 
-                        .panel-group.accordion#accordion2
+                                            | I have done unit testing and acceptance testing on frontend apps using Selenium webdriver,appium, and SauceLabs. I have done acceptance testing for embedded systems C# and the Quintity test framework.
+                    .panel-group.accordion#accordion2
                         .panel.panel-default
                             .row
                                 .col-sm-4
                                     // PANEL HEADING 
                                     .panel-heading
                                         h4.panel-title
-                                            a.collapsed(data-toggle='collapse', data-parent='#accordion2', href='#collapse2') Front-end Development 
+                                            a.collapsed(data-toggle='collapse', data-parent='#accordion2', href='#collapse2') C#
                                 // Skills Bars 
                                 .col-sm-8
                                     .progress
-                                        .progress-bar(role='progressbar', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100', style='width: 50%;')
+                                        .progress-bar(role='progressbar', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100', style='width: 70%;')
                                             span.sr-only 60% Complete
                                     // Skillls Text 
                                     #collapse2.panel-collapse.collapse
                                         .panel-body
                                             p 
-                                            | Tools I have used in the past are: BootStrap, JQuery, Pug templating engine , Edge templating engine, MongoDB, WebPack.
-                                            | My next foray front-end development will be to do a deep dive Single Page Applications.   
-                    h6 Design Engineering
-                    // Sound Engineering 
+                                            | My main coding language, I have largely done SDET work with this language. Setting up test infrastructure and developing automated tests for various projects. 
                     .panel-group.accordion#accordion3
                         .panel.panel-default
                             .row
@@ -68,7 +65,46 @@ block content
                                     // PANEL HEADING 
                                     .panel-heading
                                         h4.panel-title
-                                            a.collapsed(data-toggle='collapse', data-parent='#accordion1', href='#collapse3') AC Power Systems Design
+                                            a.collapsed(data-toggle='collapse', data-parent='#accordion3', href='#collapse3') UX/UI Design
+                                // Skills Bars 
+                                .col-sm-8
+                                    .progress
+                                        .progress-bar(role='progressbar', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100', style='width: 40%;')
+                                            span.sr-only 60% Complete
+                                    // Skillls Text 
+                                    #collapse3.panel-collapse.collapse
+                                        .panel-body
+                                            p 
+                                            | Tools I have used in the past are : Balsamiq, Adobe XD, Zeplin, Illustrator and Photoshop. Im always learning more to master these tools. 
+                        .panel-group.accordion#accordion4
+                        .panel.panel-default
+                            .row
+                                .col-sm-4
+                                    // PANEL HEADING 
+                                    .panel-heading
+                                        h4.panel-title
+                                            a.collapsed(data-toggle='collapse', data-parent='#accordion4', href='#collapse4') JavaScript 
+                                // Skills Bars 
+                                .col-sm-8
+                                    .progress
+                                        .progress-bar(role='progressbar', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100', style='width: 40%;')
+                                            span.sr-only 60% Complete
+                                    // Skillls Text 
+                                    #collapse4.panel-collapse.collapse
+                                        .panel-body
+                                            p 
+                                            | Tools I have used in the past are: BootStrap, JQuery, Pug templating engine , Edge templating engine, MongoDB, WebPack.
+                                            | My next foray front-end development will be to do a deep dive Single Page Applications.   
+                    h6 Design Engineering
+                    // Sound Engineering 
+                    .panel-group.accordion#accordion5
+                        .panel.panel-default
+                            .row
+                                .col-sm-4
+                                    // PANEL HEADING 
+                                    .panel-heading
+                                        h4.panel-title
+                                            a.collapsed(data-toggle='collapse', data-parent='#accordion5', href='#collapse5') AC Power Systems Design
                                 // Skills Bars 
                                 .col-sm-8
                                     .progress
@@ -83,7 +119,7 @@ block content
                     h5.margin-top-30 Soft Skills
                     // Application of knowledge 
                     //- h6 Application of knowledge
-                    .panel-group.accordion#accordion1
+                    .panel-group.accordion#accordion6
                         .panel.panel-default
                             .row
                                 .col-sm-4
@@ -142,7 +178,7 @@ block content
                     .media-body
                         // COmpany Logo 
                         .company-logo.media-left
-                            img(src='img/MC_logo', alt='meteorcomm logo')
+                            img(src='img/MC_logo.png', alt='meteorcomm logo')
                         h6 Software Developer in Test
                         p Meteorcomm LLC
                         p Renton, Wa, USA
